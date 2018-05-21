@@ -29,6 +29,11 @@ public:
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
+  /**
+  * A helper method to normalizes angles between -pi and pi.
+  */
+double NormalizeAngle(double angle);
+
 };
 
 #endif /* TOOLS_H_ */
